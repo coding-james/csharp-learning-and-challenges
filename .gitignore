@@ -1,0 +1,8 @@
+.*
+src/Sandbox/bin/
+src/Sandbox/obj/
+test/Sandbox.Tests/bin
+test/Sandbox.Tests/obj
+
+# Exclude from ignore
+!.gitignore
