@@ -1,0 +1,27 @@
+Check versions of dotnet installed
+dotnet --list-sdks
+
+Setup
+Create a directory
+Create src and test subdirectories
+Inside src, create [ProjectName] Directory
+Inside [ProjectName] folder, dotnet new console
+
+Setup Test
+In test folder
+Make a directory called [ProjectName].Tests
+Inside this folder, dotnet new xunit
+xUnit package added to project as part of these steps
+Then link the main csproj to the test
+dotnet add reference ../../src/[FILEPATH]/[ProjectName].proj
+
+Create Solution File
+In root
+dotnet new sln
+
+Add projects to sln
+dotnet sln add src/[FILEPATH]/[ProjectName].proj
+dotnet sln add test/[FILEPATH]/[ProjectName].Tests.proj
+
+https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-sln
+https://stackoverflow.com/questions/42927398/how-to-create-solution-file-with-dotnet-core-cli
