@@ -23,14 +23,6 @@
 <h3 align="center">Coding Practice</h3>
 
   <p align="center">
-    This repo is used for me to practice coding and complete challenges as I continue to build my skills and knowledge.
-    <br />
-    <br />
-    <a href="https://github.com/coding-james/csharp-learning-and-challenges"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/coding-james/csharp-learning-and-challenges">View Demo</a>
-    ·
     <a href="https://github.com/coding-james/csharp-learning-and-challenges/issues">Report Bug</a>
     ·
     <a href="https://github.com/coding-james/csharp-learning-and-challenges/issues">Request Feature</a>
@@ -40,7 +32,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This repo is used for me to practice JavaScript and related Stacks and complete challenges as I continue to build my skills and knowledge.
+This repo is used for me to practice C# / .Net, related frameworks and complete challenges.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -48,7 +40,7 @@ This repo is used for me to practice JavaScript and related Stacks and complete 
 
 ### Built With
 * [![C#][CSharp-shield]][CSharp-url]
-* [![.Net][dotNet-shield]][dotNet-url]
+* [![.Net 8][dotNet-shield]][dotNet-url]
 * [![xUnit][xUnit-shield]][xUnit-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -62,8 +54,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* [dotnet version 7.0](https://dotnet.microsoft.com/)
+* Download and Install [Visual Studio](https://visualstudio.microsoft.com/) and [.Net 8.0](https://dotnet.microsoft.com/)
 
 ### Installation
 
@@ -71,6 +62,9 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    git clone https://github.com/coding-james/csharp-learning-and-challenges.git
    ```
+2. Open Visual Studio
+3. Select Open a project or solution and navigate to the downloaded repo, select the .sln file in the root folder
+4. Select Build
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,7 +99,6 @@ Project Link: [https://github.com/coding-james/csharp-learning-and-challenges](h
 [issues-url]: https://github.com/coding-james/csharp-learning-and-challenges/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/stroudj
-
 [CSharp-shield]:https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white
 [CSharp-url]: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/introduction
 [dotNet-shield]:https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white
