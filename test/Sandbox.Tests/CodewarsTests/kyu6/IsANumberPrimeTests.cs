@@ -13,6 +13,7 @@ namespace Sandbox.Tests.CodewarsTests.kyu6
         [InlineData(false, 0)]
         [InlineData(false, 1)]
         [InlineData(true, 2)]
+        [InlineData(false, 9)]
 
         public void IsPrime(bool expected, int input)
         {

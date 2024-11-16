@@ -13,6 +13,7 @@ namespace Sandbox.Tests.CodewarsTests.kyu7
         [InlineData("Ths wbst s fr lsrs LL!", "This website is for losers LOL!")]
         [InlineData("N ffns bt,\nYr wrtng s mng th wrst 'v vr rd", "No offense but,\nYour writing is among the worst I've ever read")]
         [InlineData("Wht r y,  cmmnst?", "What are you, a communist?")]
+        [InlineData("", "")]
 
         public void Disemvowel(string expected, string input1)
         {

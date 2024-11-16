@@ -20,5 +20,17 @@ namespace Sandbox.Tests.CodewarsTests.kyu6
         {
             Assert.Equal(expected, Codewars.kyu6.FindTheUniqueNumber.GetUnique(input));
         }
+
+        [Theory]
+        [InlineData(1, new[] { 1, 2, 2, 2 })]
+        [InlineData(-2, new[] { -2, 2, 2, 2 })]
+        [InlineData(14, new[] { 11, 11, 14, 11, 11 })]
+        [InlineData(14, new[] { 11, 11, 14, 11, 11, 11, 11, 11, 11, 11 })]
+        [InlineData(14, new[] { 11, 11, 11, 11, 11, 11, 11, 11, 11, 14 })]
+
+        public void GetUniqueOld(int expected, IEnumerable<int> input)
+        {
+            Assert.Equal(expected, Codewars.kyu6.FindTheUniqueNumber.GetUniqueOLD(input));
+        }
     }
 }

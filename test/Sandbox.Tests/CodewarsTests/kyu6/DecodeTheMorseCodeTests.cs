@@ -11,6 +11,9 @@ namespace Sandbox.Tests.CodewarsTests.kyu6
         // CODEWARS: Decode the Morse code
         [Theory]
         [InlineData("HEY JUDE", ".... . -.--   .--- ..- -.. .")]
+        [InlineData("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG", "- .... .   --.- ..- .. -.-. -.-   -... .-. --- .-- -.   ..-. --- -..-   .--- ..- -- .--. ...   --- ...- . .-.   - .... .   .-.. .- --.. -.--   -.. --- --.")]
+        [InlineData("1234567890", ".---- ..--- ...-- ....- ..... -.... --... ---.. ----. -----")]
+        [InlineData(".,", ".-.-.- --..--")]
 
         public void Decode(string expected, string input)
         {
