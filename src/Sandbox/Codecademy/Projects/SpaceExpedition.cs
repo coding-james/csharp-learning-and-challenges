@@ -8,7 +8,7 @@ namespace Sandbox.Codecademy.Projects
 {
     public class SpaceExpedition
     {
-        public static void Main(string[] args)
+        public static void Mission(string[] args)
         {
             // Your code goes here
             bool isAtmosphereBreathable = true;
