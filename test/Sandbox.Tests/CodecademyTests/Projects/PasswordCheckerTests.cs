@@ -18,24 +18,16 @@ namespace Sandbox.Tests.CodecademyTests.Projects
         public void PasswordChecker_Valid(string userInput, int score, string expected)
         {
 
-            var expectedOutput = $"Please enter a password{Environment.NewLine}" +
-                                $"Your password score is {score} and your password is {expected}{Environment.NewLine}";
+            // Arrange
+            string expectedOutput = $"Your password score is {score} and your password is {expected}";
 
-            using (var swPasswordChecker_Valid = new StringWriter())
-            {
-                Console.SetOut(swPasswordChecker_Valid); using (var srPasswordChecker_Valid = new StringReader(userInput))
-                {
-                    Console.SetIn(srPasswordChecker_Valid);
+            // Act
+            string result = PasswordChecker.PasswordScore(userInput);
 
-                    // Act
-                    PasswordChecker.PasswordScore(null);
-
-                    // Assert
-                    var result = swPasswordChecker_Valid.ToString();
-                    Assert.Equal(expectedOutput, result);
-                }
-            }
+            // Assert
+            Assert.Equal(expectedOutput, result);
         }
+
 
         [Theory]
         [InlineData("\" \"")]
@@ -47,23 +39,14 @@ namespace Sandbox.Tests.CodecademyTests.Projects
         public void PasswordChecker_Invalid(string userInput)
         {
 
-            var expectedOutput = $"Please enter a password{Environment.NewLine}" +
-                                $"Your password doesn't meet the minimum requirement{Environment.NewLine}";
+            // Arrange        
+            string expectedOutput = "Your password doesn't meet the minimum requirement";
 
-            using (var sw = new StringWriter())
-            {
-                Console.SetOut(sw); using (var sr = new StringReader(userInput))
-                {
-                    Console.SetIn(sr);
+            // Act
+            string result = PasswordChecker.PasswordScore(userInput);
 
-                    // Act
-                    PasswordChecker.PasswordScore(null);
-
-                    // Assert
-                    var result = sw.ToString();
-                    Assert.Equal(expectedOutput, result);
-                }
-            }
+            //Assert
+            Assert.Equal(expectedOutput, result);
         }
     }
 }

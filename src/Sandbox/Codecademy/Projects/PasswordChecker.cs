@@ -8,7 +8,7 @@ namespace Sandbox.Codecademy.Projects
 {
     public class PasswordChecker
     {
-        public static void PasswordScore(string[] args)
+        public static string PasswordScore(string userPassword)
         {
             int minLength = 8;
             string uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -18,9 +18,6 @@ namespace Sandbox.Codecademy.Projects
             List<string> badPasswords = ["123456", "password", "qwerty"];
             int score = 0;
             string passwordAssessment;
-
-            Console.WriteLine("Please enter a password");
-            string userPassword = Console.ReadLine();
 
             if (!badPasswords.Contains(userPassword.ToLower()))
             {
@@ -71,14 +68,7 @@ namespace Sandbox.Codecademy.Projects
                     break;
             }
 
-            if (score == 0)
-            {
-                Console.WriteLine(passwordAssessment);
-            }
-            else
-            {
-                Console.WriteLine($"Your password score is {score} and your password is {passwordAssessment}");
-            }
+            return score == 0 ? passwordAssessment : $"Your password score is {score} and your password is {passwordAssessment}";
         }
     }
 }
